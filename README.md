@@ -16,7 +16,7 @@ reads the exported files from it, so a drawing changes in one place.
 | `android/designsystem/res/` | drawables for `core/designsystem`: the art at 640 px WebP in `drawable-nodpi`, `brand_mark.xml` |
 | `android/app/res/` | launcher foreground and monochrome PNGs per density for `:app` |
 | `android/app-live/res/` | the notification icon for the `live` flavor |
-| `web/` | the art as 640 px WebP, `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` |
+| `web/` | the art as 640 px WebP, `brand_mark.svg`, and the app icon as `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` |
 | `tools/` | `export.py` writes `android/` and `web/` from the masters; `key.py` cuts a drawing off its background; `preview.py` draws `preview.png` |
 
 The exported files are committed. The app and the website build without
@@ -41,5 +41,9 @@ visor. The palette is teal `#066A61`, mint `#97E7DB` and `#C7E6E0`, charcoal
 
 The launcher face sits inside the central 66 units of the 108-unit
 adaptive-icon grid. The monochrome and notification icons are the same visor
-in one colour with the face cut out. The mark keeps the geometry of the
-earlier `brand_mark.xml`, which the app's loading indicator traces.
+in one colour with the face cut out. The web's favicon and app icons come
+from `masters/icon/app_icon.svg`: the same visor, scaled up, on the
+launcher's mint `#B9E7E1`, so the browser tab and the phone's home screen
+show one icon. The mark keeps the geometry of the earlier `brand_mark.xml`,
+which the app's loading indicator traces, and sits beside the name in the
+site header.

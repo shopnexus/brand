@@ -1,38 +1,243 @@
 {
   "note": "One entry per asset. tools/export.py reads this and writes android/ and web/. Android paths are relative to a consumer's source set res/ directory.",
   "assets": [
-    {"name": "art_ai_camera", "master": "masters/art/art_ai_camera.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_ai_reading", "master": "masters/art/art_ai_reading.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_cod_placed", "master": "masters/art/art_cod_placed.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_cod_ready", "master": "masters/art/art_cod_ready.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_deal", "master": "masters/art/art_deal.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_inbox", "master": "masters/art/art_inbox.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_listings", "master": "masters/art/art_listings.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_not_found", "master": "masters/art/art_not_found.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_notifications", "master": "masters/art/art_notifications.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_offline", "master": "masters/art/art_offline.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_orders", "master": "masters/art/art_orders.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_plans", "master": "masters/art/art_plans.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_posted", "master": "masters/art/art_posted.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_received", "master": "masters/art/art_received.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_reviews", "master": "masters/art/art_reviews.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_saved", "master": "masters/art/art_saved.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_search", "master": "masters/art/art_search.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "art_verified", "master": "masters/art/art_verified.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_baby", "master": "masters/category/category_baby.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_fashion", "master": "masters/category/category_fashion.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_furniture", "master": "masters/category/category_furniture.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_home", "master": "masters/category/category_home.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_laptop", "master": "masters/category/category_laptop.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_phones", "master": "masters/category/category_phones.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_sports", "master": "masters/category/category_sports.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "category_vehicles", "master": "masters/category/category_vehicles.png", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "tier_top", "master": "masters/tier/tier_top.png", "kind": "art", "android": null, "web": true},
-    {"name": "tier_trusted", "master": "masters/tier/tier_trusted.png", "kind": "art", "android": null, "web": true},
-    {"name": "avatar_default", "master": "masters/avatar/avatar_default.svg", "kind": "art", "android": "designsystem", "web": true},
-    {"name": "ic_launcher_foreground", "master": "masters/icon/face.svg", "kind": "launcher", "android": "app", "web": false},
-    {"name": "ic_launcher_monochrome", "master": "masters/icon/face_mono.svg", "kind": "launcher", "android": "app", "web": false},
-    {"name": "ic_notification", "master": "masters/icon/face_mono.svg", "kind": "notification", "android": "app-live", "web": false},
-    {"name": "brand_mark", "master": "masters/logo/brand_mark.svg", "kind": "mark", "android": "designsystem", "web": true}
+    {
+      "name": "art_ai_camera",
+      "master": "masters/art/art_ai_camera.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_ai_reading",
+      "master": "masters/art/art_ai_reading.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_cod_placed",
+      "master": "masters/art/art_cod_placed.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_cod_ready",
+      "master": "masters/art/art_cod_ready.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_deal",
+      "master": "masters/art/art_deal.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_inbox",
+      "master": "masters/art/art_inbox.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_listings",
+      "master": "masters/art/art_listings.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_not_found",
+      "master": "masters/art/art_not_found.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_notifications",
+      "master": "masters/art/art_notifications.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_offline",
+      "master": "masters/art/art_offline.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_orders",
+      "master": "masters/art/art_orders.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_plans",
+      "master": "masters/art/art_plans.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_posted",
+      "master": "masters/art/art_posted.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_received",
+      "master": "masters/art/art_received.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_reviews",
+      "master": "masters/art/art_reviews.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_saved",
+      "master": "masters/art/art_saved.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_search",
+      "master": "masters/art/art_search.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "art_verified",
+      "master": "masters/art/art_verified.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_baby",
+      "master": "masters/category/category_baby.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_fashion",
+      "master": "masters/category/category_fashion.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_furniture",
+      "master": "masters/category/category_furniture.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_home",
+      "master": "masters/category/category_home.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_laptop",
+      "master": "masters/category/category_laptop.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_phones",
+      "master": "masters/category/category_phones.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_sports",
+      "master": "masters/category/category_sports.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_vehicles",
+      "master": "masters/category/category_vehicles.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "tier_top",
+      "master": "masters/tier/tier_top.png",
+      "kind": "art",
+      "android": null,
+      "web": true
+    },
+    {
+      "name": "tier_trusted",
+      "master": "masters/tier/tier_trusted.png",
+      "kind": "art",
+      "android": null,
+      "web": true
+    },
+    {
+      "name": "avatar_default",
+      "master": "masters/avatar/avatar_default.svg",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "ic_launcher_foreground",
+      "master": "masters/icon/face.svg",
+      "kind": "launcher",
+      "android": "app",
+      "web": false
+    },
+    {
+      "name": "ic_launcher_monochrome",
+      "master": "masters/icon/face_mono.svg",
+      "kind": "launcher",
+      "android": "app",
+      "web": false
+    },
+    {
+      "name": "ic_notification",
+      "master": "masters/icon/face_mono.svg",
+      "kind": "notification",
+      "android": "app-live",
+      "web": false
+    },
+    {
+      "name": "brand_mark",
+      "master": "masters/logo/brand_mark.svg",
+      "kind": "mark",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "app_icon",
+      "master": "masters/icon/app_icon.svg",
+      "kind": "app_icon",
+      "android": null,
+      "web": true
+    }
   ]
 }

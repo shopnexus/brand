@@ -129,9 +129,13 @@ def main():
             vector_drawable(svg, path(*android_res(target), "drawable", f"{name}.xml"),
                             "The ShopNexus mark: a shopping bag whose handle joins two nodes; the terracotta dot is the price tag.")
             if a["web"]:
-                shutil.copy(svg, path("web", "favicon.svg"))
-                for px, fname in ((32, "favicon-32.png"), (180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")):
-                    render_svg(svg, px, path("web", fname))
+                shutil.copy(svg, path("web", "brand_mark.svg"))
+        elif kind == "app_icon":
+            # The web's favicon and app icons are the launcher's face on its mint, as on Android.
+            svg = os.path.join(ROOT, master)
+            shutil.copy(svg, path("web", "favicon.svg"))
+            for px, fname in ((32, "favicon-32.png"), (180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")):
+                render_svg(svg, px, path("web", fname))
     print("exported", len(manifest["assets"]), "assets")
 
 
