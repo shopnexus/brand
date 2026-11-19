@@ -135,6 +135,27 @@
       "web": true
     },
     {
+      "name": "category_beauty",
+      "master": "masters/category/category_beauty.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_books",
+      "master": "masters/category/category_books.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_camera",
+      "master": "masters/category/category_camera.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
       "name": "category_fashion",
       "master": "masters/category/category_fashion.png",
       "kind": "art",
@@ -149,6 +170,13 @@
       "web": true
     },
     {
+      "name": "category_hobby",
+      "master": "masters/category/category_hobby.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
       "name": "category_home",
       "master": "masters/category/category_home.png",
       "kind": "art",
@@ -158,6 +186,13 @@
     {
       "name": "category_laptop",
       "master": "masters/category/category_laptop.png",
+      "kind": "art",
+      "android": "designsystem",
+      "web": true
+    },
+    {
+      "name": "category_pets",
+      "master": "masters/category/category_pets.png",
       "kind": "art",
       "android": "designsystem",
       "web": true
